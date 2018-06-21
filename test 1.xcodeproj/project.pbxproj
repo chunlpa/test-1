@@ -13,6 +13,8 @@
 		7CC335FB20DB9ADB0059506E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CC335F920DB9ADB0059506E /* LaunchScreen.storyboard */; };
 		7CC3360320DB9CA50059506E /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC3360220DB9CA50059506E /* MyTableViewController.swift */; };
 		7CC3360520DB9CD30059506E /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC3360420DB9CD30059506E /* MyTableViewCell.swift */; };
+		7CC3360720DBA2970059506E /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC3360620DBA2970059506E /* MyViewController.swift */; };
+		7CC3360A20DBA3990059506E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CC3360920DBA3990059506E /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		7CC335FC20DB9ADB0059506E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CC3360220DB9CA50059506E /* MyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
 		7CC3360420DB9CD30059506E /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		7CC3360620DBA2970059506E /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		7CC3360920DBA3990059506E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CC3360A20DBA3990059506E /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,7 @@
 			children = (
 				7CC335EF20DB9ADB0059506E /* test 1 */,
 				7CC335EE20DB9ADB0059506E /* Products */,
+				7CC3360820DBA3990059506E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +69,17 @@
 				7CC335FC20DB9ADB0059506E /* Info.plist */,
 				7CC3360220DB9CA50059506E /* MyTableViewController.swift */,
 				7CC3360420DB9CD30059506E /* MyTableViewCell.swift */,
+				7CC3360620DBA2970059506E /* MyViewController.swift */,
 			);
 			path = "test 1";
+			sourceTree = "<group>";
+		};
+		7CC3360820DBA3990059506E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7CC3360920DBA3990059506E /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +156,7 @@
 			files = (
 				7CC335F120DB9ADB0059506E /* AppDelegate.swift in Sources */,
 				7CC3360320DB9CA50059506E /* MyTableViewController.swift in Sources */,
+				7CC3360720DBA2970059506E /* MyViewController.swift in Sources */,
 				7CC3360520DB9CD30059506E /* MyTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

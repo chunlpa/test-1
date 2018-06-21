@@ -11,7 +11,7 @@ import UIKit
 class MyTableViewController: UITableViewController {
 
     var foodStorename = ["동의과학대학교", "부산시민공원", "롯데호텔 부산본점"]
-    var foodStoreaddress = ["부산광역시 부산진구 양지로 54", "부산광역시 부산진구 연지동 100-6", "부산광역시 부산진구 부전동 부전로 583-15"]
+    var foodStoreaddress = ["부산광역시 부산진구 양정동 429-19", "부산광역시 부산진구 연지동 100-6", "부산광역시 부산진구 부전동 부전로 583-15"]
     
     
     
@@ -94,14 +94,50 @@ class MyTableViewController: UITableViewController {
     }
     */
 
-    /*
+   
+    // 주석풀어주자
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "mapview" {
+            
+            if let indexPath = tableView.indexPathForSelectedRow{
+                let destinationController = segue.destination as! MyViewController
+            destinationController.name = foodStorename[indexPath.row]
+            destinationController.address = foodStoreaddress[indexPath.row]
+                
+                
+                
+            }
+        }
+            
+        
     }
-    */
+   
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

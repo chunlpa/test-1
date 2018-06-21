@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -44,6 +45,7 @@
                                 <connections>
                                     <outlet property="address" destination="SFH-vl-VJr" id="uBv-O6-7av"/>
                                     <outlet property="name" destination="IcD-Li-ng3" id="OQH-wf-xfG"/>
+                                    <segue destination="CGd-xh-Avf" kind="show" identifier="mapview" id="Tza-Iw-jfC"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -58,6 +60,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="83n-2F-LS4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="338" y="95"/>
+        </scene>
+        <!--My View Controller-->
+        <scene sceneID="xEq-BC-9zl">
+            <objects>
+                <viewController id="CGd-xh-Avf" customClass="MyViewController" customModule="test_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="76j-Ig-OyT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Vep-Qq-CbL">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bLL-y0-28l" firstAttribute="trailing" secondItem="Vep-Qq-CbL" secondAttribute="trailing" id="GK6-Yr-uI5"/>
+                            <constraint firstItem="Vep-Qq-CbL" firstAttribute="leading" secondItem="bLL-y0-28l" secondAttribute="leading" id="Keo-1T-xfO"/>
+                            <constraint firstItem="bLL-y0-28l" firstAttribute="bottom" secondItem="Vep-Qq-CbL" secondAttribute="bottom" id="R7c-uT-MvH"/>
+                            <constraint firstItem="Vep-Qq-CbL" firstAttribute="top" secondItem="bLL-y0-28l" secondAttribute="top" id="alh-h3-tr5"/>
+                            <constraint firstItem="Vep-Qq-CbL" firstAttribute="top" secondItem="bLL-y0-28l" secondAttribute="top" id="bba-e3-O4y"/>
+                            <constraint firstItem="bLL-y0-28l" firstAttribute="bottom" secondItem="Vep-Qq-CbL" secondAttribute="bottom" id="uiT-AS-CT7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bLL-y0-28l"/>
+                    </view>
+                    <connections>
+                        <outlet property="map" destination="Vep-Qq-CbL" id="j9g-OR-pSS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YU8-38-UAg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1108" y="88"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="39Z-8C-9wW">
