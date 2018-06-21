@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Title-->
         <scene sceneID="LLt-R5-7Cm">
             <objects>
                 <tableViewController id="pcP-va-0Fy" customClass="MyTableViewController" customModule="test_1" customModuleProvider="target" sceneMemberID="viewController">
@@ -55,7 +55,13 @@
                             <outlet property="delegate" destination="pcP-va-0Fy" id="Dgp-U5-nBK"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="MqN-0j-QVI"/>
+                    <navigationItem key="navigationItem" title="Title" id="flT-6d-3lp">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="map-marker.png" id="NX7-W7-kvX">
+                            <connections>
+                                <segue destination="qov-bD-GF0" kind="show" identifier="totar" id="nWF-92-yTW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="83n-2F-LS4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -92,6 +98,37 @@
             </objects>
             <point key="canvasLocation" x="1108" y="88"/>
         </scene>
+        <!--Total View Controller-->
+        <scene sceneID="hEZ-tQ-TRG">
+            <objects>
+                <viewController id="qov-bD-GF0" customClass="TotalViewController" customModule="test_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yYJ-RL-tJc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="xTK-fT-az2">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="u1F-KO-68Q" firstAttribute="bottom" secondItem="xTK-fT-az2" secondAttribute="bottom" id="FcS-ES-8ok"/>
+                            <constraint firstItem="xTK-fT-az2" firstAttribute="top" secondItem="u1F-KO-68Q" secondAttribute="top" id="Wz4-OO-f1b"/>
+                            <constraint firstItem="xTK-fT-az2" firstAttribute="top" secondItem="u1F-KO-68Q" secondAttribute="top" id="jA7-hE-9Ql"/>
+                            <constraint firstItem="xTK-fT-az2" firstAttribute="leading" secondItem="u1F-KO-68Q" secondAttribute="leading" id="kgM-qm-6KY"/>
+                            <constraint firstItem="u1F-KO-68Q" firstAttribute="trailing" secondItem="xTK-fT-az2" secondAttribute="trailing" id="vO5-gl-VCA"/>
+                            <constraint firstItem="u1F-KO-68Q" firstAttribute="bottom" secondItem="xTK-fT-az2" secondAttribute="bottom" id="xuE-5p-Uon"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="u1F-KO-68Q"/>
+                    </view>
+                    <connections>
+                        <outlet property="total" destination="xTK-fT-az2" id="tse-yu-GfI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UF4-cy-1BP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="337" y="799"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="39Z-8C-9wW">
             <objects>
@@ -109,4 +146,7 @@
             <point key="canvasLocation" x="-614" y="95"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="map-marker.png" width="32" height="32"/>
+    </resources>
 </document>

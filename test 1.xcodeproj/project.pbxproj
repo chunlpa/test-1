@@ -15,6 +15,8 @@
 		7CC3360520DB9CD30059506E /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC3360420DB9CD30059506E /* MyTableViewCell.swift */; };
 		7CC3360720DBA2970059506E /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC3360620DBA2970059506E /* MyViewController.swift */; };
 		7CC3360A20DBA3990059506E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CC3360920DBA3990059506E /* MapKit.framework */; };
+		7CC3360C20DBAB420059506E /* map-marker.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CC3360B20DBAB420059506E /* map-marker.png */; };
+		7CC3360E20DBABF40059506E /* TotalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC3360D20DBABF40059506E /* TotalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		7CC3360420DB9CD30059506E /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 		7CC3360620DBA2970059506E /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 		7CC3360920DBA3990059506E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		7CC3360B20DBAB420059506E /* map-marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "map-marker.png"; path = "../../map-marker.png"; sourceTree = "<group>"; };
+		7CC3360D20DBABF40059506E /* TotalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,11 +69,13 @@
 				7CC335F020DB9ADB0059506E /* AppDelegate.swift */,
 				7CC335F420DB9ADB0059506E /* Main.storyboard */,
 				7CC335F720DB9ADB0059506E /* Assets.xcassets */,
+				7CC3360B20DBAB420059506E /* map-marker.png */,
 				7CC335F920DB9ADB0059506E /* LaunchScreen.storyboard */,
 				7CC335FC20DB9ADB0059506E /* Info.plist */,
 				7CC3360220DB9CA50059506E /* MyTableViewController.swift */,
 				7CC3360420DB9CD30059506E /* MyTableViewCell.swift */,
 				7CC3360620DBA2970059506E /* MyViewController.swift */,
+				7CC3360D20DBABF40059506E /* TotalViewController.swift */,
 			);
 			path = "test 1";
 			sourceTree = "<group>";
@@ -143,6 +149,7 @@
 			files = (
 				7CC335FB20DB9ADB0059506E /* LaunchScreen.storyboard in Resources */,
 				7CC335F820DB9ADB0059506E /* Assets.xcassets in Resources */,
+				7CC3360C20DBAB420059506E /* map-marker.png in Resources */,
 				7CC335F620DB9ADB0059506E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -157,6 +164,7 @@
 				7CC335F120DB9ADB0059506E /* AppDelegate.swift in Sources */,
 				7CC3360320DB9CA50059506E /* MyTableViewController.swift in Sources */,
 				7CC3360720DBA2970059506E /* MyViewController.swift in Sources */,
+				7CC3360E20DBABF40059506E /* TotalViewController.swift in Sources */,
 				7CC3360520DB9CD30059506E /* MyTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

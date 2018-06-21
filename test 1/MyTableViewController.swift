@@ -9,7 +9,8 @@
 import UIKit
 
 class MyTableViewController: UITableViewController {
-
+     // 주소를 바꾸면 핀이 이동한다
+    
     var foodStorename = ["동의과학대학교", "부산시민공원", "롯데호텔 부산본점"]
     var foodStoreaddress = ["부산광역시 부산진구 양정동 429-19", "부산광역시 부산진구 연지동 100-6", "부산광역시 부산진구 부전동 부전로 583-15"]
     
@@ -105,19 +106,27 @@ class MyTableViewController: UITableViewController {
             
             if let indexPath = tableView.indexPathForSelectedRow{
                 let destinationController = segue.destination as! MyViewController
+            
+                //아마 이부분은 주소를 찾아오는 부분인듯하다 
             destinationController.name = foodStorename[indexPath.row]
             destinationController.address = foodStoreaddress[indexPath.row]
                 
+                // 3번째
                 
                 
             }
-        }
             
+            } else if segue.identifier == "totar" {
+                let destinationController = segue.destination as! TotalViewController
+            destinationController.name = foodStoreaddress
+            destinationController.address = foodStoreaddress
+            
+            
+            }
+        }
         
     }
-   
 
-}
 
 
 

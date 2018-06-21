@@ -7,12 +7,15 @@
 //
 
 import UIKit
-//추가
+
+
+//추가 mapkit 를 받아온다
 import MapKit
 
 
 class MyViewController: UIViewController {
-//추가
+   
+    //추가 
     @IBOutlet weak var map: MKMapView!
     
     //추가
